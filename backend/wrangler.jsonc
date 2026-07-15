@@ -1,0 +1,22 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "watts-unified-tools-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-07-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "ALLOWED_ORIGINS": "https://wattsunified.com,https://www.wattsunified.com,https://mdbblueprint.wattsunified.com,https://taxbuckets.wattsunified.com,https://retirementcalculator.wattsunified.com,https://financialreview.wattsunified.com,https://financialsnapshot.wattsunified.com,https://familychecklist.wattsunified.com,https://veteranroadmap.wattsunified.com,https://debtfree.wattsunified.com,https://connect.wattsunified.com"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "watts-unified-leads",
+      "database_id": "956aae52-b8c8-47a7-a187-a8dd47b35261",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
+}

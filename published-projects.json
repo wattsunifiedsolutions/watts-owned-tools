@@ -1,0 +1,22 @@
+{
+  "locationId": "04eHM45m5V5UCFxeuKpH",
+  "folderId": "1780676377761590208",
+  "folderName": "Watts Unified Solutions",
+  "capturedAt": "2026-07-15",
+  "policy": "published-projects-only",
+  "projects": [
+    {"name":"MDB Blueprint Page","projectId":"1783612443437637055","published":true,"hostname":"mdbblueprint.wattsunified.com","slug":"mdb-blueprint"},
+    {"name":"Tax Buckets Page","projectId":"1783439538643061557","published":true,"hostname":"taxbuckets.wattsunified.com","slug":"tax-buckets"},
+    {"name":"Retirement Lead Tool","projectId":"1783039754761153934","published":true,"hostname":"retirementcalculator.wattsunified.com","slug":"retirement-calculator","liveStatus":"broken-cname-cross-user"},
+    {"name":"Unified Financial Review","projectId":"1783014654942981711","published":true,"hostname":"financialreview.wattsunified.com","slug":"financial-review","cloudflareProject":"watts-unified-financial-review","migrationStatus":"live-on-cloudflare-pages"},
+    {"name":"Digital FNA Snapshot","projectId":"1781982148487061775","published":true,"hostname":"financialsnapshot.wattsunified.com","slug":"financial-snapshot"},
+    {"name":"Family Protection","projectId":"1781814609902191929","published":true,"hostname":"familychecklist.wattsunified.com","slug":"family-checklist"},
+    {"name":"Client Page Rebuild","projectId":"1781628308891283307","published":true,"hostname":"connect.wattsunified.com","slug":"client-page","mappingStatus":"verify-publish-domain"},
+    {"name":"Veteran Financial Landing","projectId":"1780719165748608159","published":true,"hostname":"veteranroadmap.wattsunified.com","slug":"veteran-roadmap"},
+    {"name":"Debt Free calculator and effect","projectId":"1780634657919626578","published":true,"hostname":"debtfree.wattsunified.com","slug":"debt-free"},
+    {"name":"Watts Unified Solutions","projectId":"1780583304595719976","published":true,"hostname":"wattsunified.com","slug":"main-site"}
+  ],
+  "excluded": [
+    {"name":"Family Protection Assessment","projectId":"1781976825270037708","published":false,"reason":"User requested published tools only"}
+  ]
+}

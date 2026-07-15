@@ -1,0 +1,130 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Watts Unified Financial Review</title>
+    <meta name="description" content="Personal Financial Review powered by Watts Unified Solutions.">
+    <meta name="theme-color" content="#0B1F3A">
+    <meta name="application-name" content="Watts Unified Financial Review">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Financial Review">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Watts Unified Financial Review">
+    <meta property="og:description" content="Personal Financial Review powered by Watts Unified Solutions.">
+    <meta property="og:url" content="https://financialreview.wattsunified.com/">
+    <meta property="og:site_name" content="Watts Unified Solutions">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Watts Unified Financial Review">
+    <meta name="twitter:description" content="Personal Financial Review powered by Watts Unified Solutions.">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="icon" href="/assets/icons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.svg">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Watts Unified Financial Review",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "url": "https://financialreview.wattsunified.com/",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Watts Unified Solutions"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="app-shell" id="appShell">
+      <aside class="sidebar" aria-label="Review progress">
+        <div class="brand" aria-label="Watts Unified Solutions">
+          <div class="brand-main">WATTS UNIFIED</div>
+          <div class="brand-sub">SOLUTIONS</div>
+          <div class="brand-divider"></div>
+          <div class="brand-mission">Protecting Families. Building Wealth. Securing Legacies.</div>
+        </div>
+
+        <div class="progress-panel">
+          <div class="progress-title">Your Progress</div>
+          <div class="progress-step" id="progressStep">Step 1 of 6</div>
+          <div class="progress-dots" id="progressDots" aria-hidden="true"></div>
+        </div>
+
+        <nav class="navsteps" id="navSteps" aria-label="Financial review steps"></nav>
+
+        <div class="help-card">
+          <strong>Need Help?</strong>
+          <p>Questions can be reviewed during your Financial Strategy Session.</p>
+          <a href="https://calendar.app.google/yKhj6hhTuujzFePt9" target="_blank" rel="noopener">Schedule Session</a>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <h1>Watts Unified Financial Review</h1>
+            <p>Helping you organize today so you can plan confidently for tomorrow.</p>
+          </div>
+          <div class="secure">
+            <div class="secure-icon" aria-hidden="true">✓</div>
+            <div>
+              <strong>Your information is saved on this device.</strong>
+              <span>This review is used to prepare for your strategy session.</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="content">
+          <div>
+            <div class="notice" id="resumeNotice" hidden>
+              <span>Progress saved automatically.</span>
+              <button type="button" class="link-button" id="clearReviewInline">Start New Review</button>
+            </div>
+            <form id="reviewForm" novalidate>
+              <div id="sections"></div>
+            </form>
+          </div>
+
+          <aside class="right-rail" aria-label="Step context">
+            <div class="side-card">
+              <div class="side-icon" aria-hidden="true">?</div>
+              <h2 id="sideTitle">About This Review</h2>
+              <p id="sideCopy">This tool collects organized information before your meeting. It does not provide advice or replace a personal strategy conversation.</p>
+            </div>
+            <div class="side-card">
+              <div class="side-icon" aria-hidden="true">✓</div>
+              <h2>Your Privacy</h2>
+              <p>Your information is stored locally in this browser unless you print or share the summary.</p>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+
+    <div class="start-overlay" id="startOverlay" hidden>
+      <section class="start-card" role="dialog" aria-modal="true" aria-labelledby="startTitle">
+        <div class="brand compact" aria-label="Watts Unified Solutions">
+          <div class="brand-main">WATTS UNIFIED</div>
+          <div class="brand-sub">SOLUTIONS</div>
+          <div class="brand-divider"></div>
+          <div class="brand-mission">Protecting Families. Building Wealth. Securing Legacies.</div>
+        </div>
+        <h2 id="startTitle">Watts Unified Financial Review</h2>
+        <p>This review is saved on this device so you can return later.</p>
+        <div class="start-actions">
+          <button type="button" class="btn primary" id="continueReview">Continue Previous Review</button>
+          <button type="button" class="btn ghost" id="startNewReview">Start New Review</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="/assets/js/app.js" defer></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"3af35a9a8aea402a8a2ca58fde599cfa","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
