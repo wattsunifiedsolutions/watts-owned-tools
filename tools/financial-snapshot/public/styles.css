@@ -43,12 +43,7 @@ a {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 80% 14%, rgba(34, 102, 204, 0.34), transparent 30%),
-    linear-gradient(125deg, rgba(17, 28, 53, 0.98), rgba(17, 28, 53, 0.9) 56%, rgba(17, 28, 53, 0.82)),
-    url("/assets/external/ddd1d56edcd8-3bf20ba7-9849-4054-9f3b-3ec33b796492.png");
-  background-position: center top;
-  background-size: cover;
+  background: linear-gradient(125deg, #111c35 0%, #13213f 58%, #0c1428 100%);
   color: #fff;
   padding: 24px clamp(18px, 4vw, 56px) clamp(48px, 7vw, 76px);
 }
@@ -58,9 +53,7 @@ a {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 24%),
-    radial-gradient(circle at 12% 88%, rgba(199, 162, 74, 0.2), transparent 26%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 28%);
   pointer-events: none;
 }
 
