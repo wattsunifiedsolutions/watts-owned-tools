@@ -133,8 +133,10 @@ function calculate() {
   byId("taxableIncome").textContent = monthlyMoney(taxableIncome);
   byId("taxableBalance").textContent = `${money.format(taxableBalance)} projected`;
   byId("deferredIncome").textContent = monthlyMoney(deferredIncome);
+  byId("heroDeferred").textContent = monthlyMoney(deferredIncome);
   byId("deferredTax").textContent = `${money.format(taxExposure)} future tax exposure`;
   byId("advantagedIncome").textContent = monthlyMoney(advantagedIncome);
+  byId("heroAdvantaged").textContent = monthlyMoney(advantagedIncome);
   byId("incomeGap").textContent = `${monthlyMoney(Math.max(0, incomeGap))} improvement`;
   byId("heroGap").textContent = monthlyMoney(Math.max(0, incomeGap));
   byId("yearsToRetirement").textContent = years;

@@ -3,37 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Three Tax Buckets Strategy | Watts Unified Solutions</title>
+    <title>Tax Buckets Calculator | Compare Tax Now, Tax Later, Tax-Free Income</title>
     <meta
       name="description"
-      content="Compare taxable, tax-deferred, and tax-advantaged retirement strategies with an owned Watts Unified Solutions calculator."
+      content="Use the Watts Unified Tax Buckets Calculator to compare taxable, tax-deferred, and tax-advantaged retirement income before future taxes reduce your spendable income."
     />
     <link rel="canonical" href="https://taxbuckets.wattsunified.com/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:title" content="Tax Buckets Calculator | Watts Unified Solutions" />
+    <meta
+      property="og:description"
+      content="Compare tax now, tax later, and tax-advantaged retirement income in one interactive calculator."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://taxbuckets.wattsunified.com/" />
+    <meta property="og:image" content="https://taxbuckets.wattsunified.com/assets/external/36aecca15980-c4b4ebc2-e7e0-458d-b606-6adcee762f5d.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tax Buckets Calculator | Watts Unified Solutions" />
+    <meta
+      name="twitter:description"
+      content="See how future taxes can affect your retirement income and compare tax-advantaged alternatives."
+    />
     <link rel="stylesheet" href="/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FinancialProduct",
+        "name": "Tax Buckets Calculator",
+        "provider": {
+          "@type": "Organization",
+          "name": "Watts Unified Solutions",
+          "url": "https://wattsunified.com/"
+        },
+        "description": "An interactive retirement income calculator comparing taxable, tax-deferred, and tax-advantaged retirement strategies."
+      }
+    </script>
   </head>
   <body>
     <main class="shell">
       <section class="hero">
         <nav class="brandbar" aria-label="Watts Unified Solutions">
-          <img src="/assets/external/36aecca15980-c4b4ebc2-e7e0-458d-b606-6adcee762f5d.png" alt="Watts Unified Solutions" />
-          <a href="https://wattsunified.com/solutions">All solutions</a>
+          <img
+            src="/assets/external/36aecca15980-c4b4ebc2-e7e0-458d-b606-6adcee762f5d.png"
+            alt="Watts Unified Solutions"
+            width="138"
+            height="52"
+            fetchpriority="high"
+          />
+          <a href="#review">Request review</a>
         </nav>
 
         <div class="hero-grid">
           <div>
-            <p class="eyebrow">Watts Unified diagnostic tool</p>
-            <h1>The Three Tax Buckets Strategy</h1>
+            <p class="eyebrow">Retirement tax exposure calculator</p>
+            <h1>Find the tax leak hiding in your retirement income.</h1>
             <p class="lead">
-              See how money taxed now, taxed later, and structured for tax-advantaged income can change your
-              retirement outcome. Adjust the numbers and compare spendable monthly income.
+              Compare tax now, tax later, and tax-advantaged strategies side by side so you can see what future taxes
+              may do to your spendable monthly income before you retire.
             </p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button primary" href="#calculator">Run my numbers</a>
+              <a class="button secondary" href="#review">Get a Tax Buckets review</a>
+            </div>
+            <ul class="hero-proof" aria-label="What this calculator shows">
+              <li><strong>3 buckets</strong><span>Tax now, tax later, tax-advantaged</span></li>
+              <li><strong>1 view</strong><span>Monthly spendable income comparison</span></li>
+              <li><strong>Secure</strong><span>Owned Cloudflare build and lead capture</span></li>
+            </ul>
           </div>
-          <div class="hero-card" aria-live="polite">
-            <span>Projected spendable income gap</span>
-            <strong id="heroGap">$0/mo</strong>
+          <aside class="hero-card" aria-live="polite">
+            <span>Default projected income gap</span>
+            <strong id="heroGap">$5,377/mo</strong>
               <small>Tax-advantaged path compared with the same dollars in a tax-deferred path.</small>
-          </div>
+            <div class="mini-results">
+              <div><span>Tax later</span><b id="heroDeferred">$4,120/mo</b></div>
+              <div><span>Tax-advantaged</span><b id="heroAdvantaged">$9,496/mo</b></div>
+            </div>
+          </aside>
         </div>
       </section>
 
@@ -171,7 +217,7 @@
         </section>
       </section>
 
-      <section class="lead-capture">
+      <section class="lead-capture" id="review">
         <div>
           <p class="eyebrow">Secure review</p>
           <h2>Get the Tax Buckets breakdown for your exact situation</h2>
