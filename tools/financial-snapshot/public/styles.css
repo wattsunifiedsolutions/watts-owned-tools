@@ -44,7 +44,9 @@ a {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: var(--brand-black);
+  background:
+    linear-gradient(90deg, rgba(17, 17, 17, 0.82) 0%, rgba(17, 17, 17, 0.68) 48%, rgba(17, 17, 17, 0.42) 100%),
+    url("/assets/resources-live-hero.png") center / cover no-repeat;
   color: #fff;
   padding: 24px clamp(18px, 4vw, 56px) clamp(48px, 7vw, 76px);
 }
