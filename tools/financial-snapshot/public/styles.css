@@ -2,11 +2,11 @@
   color-scheme: light;
   --ink: #101828;
   --muted: #667085;
-  --line: #d8e0ea;
-  --soft: #f3f7fb;
+  --line: #e4d8bd;
+  --soft: #fbf6ec;
   --panel: #ffffff;
-  --navy: #111c35;
-  --blue: #2266cc;
+  --navy: #1c1914;
+  --bronze: #9a7629;
   --gold: #c7a24a;
   --green: #227a52;
   --red: #b42318;
@@ -23,7 +23,7 @@ html {
 
 body {
   margin: 0;
-  background: #f6f8fb;
+  background: #fbf7ef;
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -43,8 +43,8 @@ a {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: linear-gradient(125deg, #111c35 0%, #13213f 58%, #0c1428 100%);
-  color: #fff;
+  background: linear-gradient(135deg, #fffdf8 0%, #fbf3e4 54%, #ead7ad 100%);
+  color: var(--ink);
   padding: 24px clamp(18px, 4vw, 56px) clamp(48px, 7vw, 76px);
 }
 
@@ -86,18 +86,18 @@ footer {
 }
 
 .brand-home span {
-  color: #fff;
+  color: var(--ink);
   line-height: 1.1;
-  text-shadow: 0 1px 16px rgba(0, 0, 0, 0.32);
 }
 
 .brandbar > a:last-child {
-  border: 1px solid rgba(255, 255, 255, 0.38);
+  border: 1px solid rgba(154, 118, 41, 0.32);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.68);
   padding: 10px 16px;
   text-decoration: none;
   font-weight: 800;
+  color: var(--ink);
 }
 
 .hero-grid {
@@ -152,7 +152,7 @@ h3 {
 .lead {
   max-width: 660px;
   margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.88);
+  color: #42403a;
   font-size: clamp(1.02rem, 2vw, 1.22rem);
   line-height: 1.62;
 }
@@ -174,10 +174,10 @@ h3 {
 }
 
 .hero-proof li {
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(154, 118, 41, 0.25);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.72);
+  color: #3b372f;
   padding: 8px 12px;
   font-size: 0.88rem;
   font-weight: 800;
@@ -196,14 +196,15 @@ h3 {
 
 .button.primary {
   border: 0;
-  background: var(--blue);
-  color: #fff;
+  background: linear-gradient(135deg, #c7a24a, #9a7629);
+  color: #14110d;
+  box-shadow: 0 12px 28px rgba(154, 118, 41, 0.24);
 }
 
 .button.secondary {
-  border: 1px solid rgba(255, 255, 255, 0.34);
-  background: rgba(255, 255, 255, 0.09);
-  color: #fff;
+  border: 1px solid rgba(154, 118, 41, 0.36);
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--ink);
 }
 
 .button.full {
@@ -235,7 +236,7 @@ h3 {
   position: absolute;
   inset: 0 0 auto;
   height: 5px;
-  background: linear-gradient(90deg, var(--blue), var(--gold));
+  background: linear-gradient(90deg, var(--bronze), var(--gold));
 }
 
 .score-card span,
@@ -247,7 +248,7 @@ h3 {
 .score-card strong {
   display: block;
   margin: 8px 0 2px;
-  color: var(--blue);
+  color: var(--bronze);
   font-size: clamp(3rem, 6vw, 4.35rem);
   line-height: 0.95;
 }
@@ -269,7 +270,7 @@ h3 {
   width: 42%;
   height: 100%;
   border-radius: inherit;
-  background: var(--blue);
+  background: var(--bronze);
   transition: width 180ms ease, background 180ms ease;
 }
 
@@ -340,7 +341,7 @@ label {
 }
 
 .choice-grid button.active {
-  border-color: var(--blue);
+  border-color: var(--bronze);
   background: #eaf2ff;
   color: #0f4695;
 }
@@ -373,7 +374,7 @@ textarea {
 }
 
 .score-row strong {
-  color: var(--blue);
+  color: var(--bronze);
   font-size: 3rem;
   line-height: 1;
 }
