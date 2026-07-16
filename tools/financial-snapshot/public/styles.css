@@ -48,15 +48,6 @@ a {
   padding: 24px clamp(18px, 4vw, 56px) clamp(48px, 7vw, 76px);
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 28%);
-  pointer-events: none;
-}
-
 .brandbar,
 .hero-grid,
 .workspace,
