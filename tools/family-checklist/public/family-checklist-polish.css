@@ -1,4 +1,5 @@
 .protection-art {
-  background-position: 100% 54%;
-  background-size: 200% auto;
+  background-image: url('/assets/external/family-protection-card-v3.webp');
+  background-position: center 42%;
+  background-size: cover;
 }
