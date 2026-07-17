@@ -18,14 +18,14 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://taxbuckets.wattsunified.com/" />
-    <meta property="og:image" content="https://taxbuckets.wattsunified.com/assets/official-logo.png" />
+    <meta property="og:image" content="https://taxbuckets.wattsunified.com/assets/tax-buckets-crest-hero-v2.webp" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Tax Buckets Calculator | Watts Unified Solutions" />
     <meta
       name="twitter:description"
       content="See how future taxes can affect your retirement income and compare tax-advantaged alternatives."
     />
-    <link rel="stylesheet" href="/tax-buckets-crest-hero-v2.css" />
+    <link rel="stylesheet" href="/tax-buckets-crest-hero-v2.css?v=3" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -59,14 +59,13 @@
         <div class="hero-grid">
           <div>
             <p class="eyebrow">Watts Unified Solutions tax strategy tool</p>
-            <h1>Compare your retirement income across three tax buckets.</h1>
+            <h1>Compare retirement income across three tax buckets.</h1>
             <p class="lead">
               Model taxable, tax-deferred, and tax-advantaged strategies in one clean view so you can understand the
               potential income impact before making your next retirement decision.
             </p>
             <div class="hero-actions" aria-label="Primary actions">
               <a class="button primary" href="#calculator">Run my numbers</a>
-              <a class="button secondary" href="#review">Get a Tax Buckets review</a>
             </div>
             <ul class="hero-proof" aria-label="What this calculator shows">
               <li><strong>3 buckets</strong><span>Tax now, tax later, tax-advantaged</span></li>
@@ -74,23 +73,30 @@
               <li><strong>Private</strong><span>Educational estimate and review request</span></li>
             </ul>
           </div>
-          <aside class="hero-card hero-visual" aria-live="polite">
-            <img
-              src="/assets/tax-buckets-crest-hero-v1.png"
-              alt="Three gold tax strategy buckets inspired by the Watts Unified crest"
-              width="1680"
-              height="945"
-              fetchpriority="high"
-            />
-            <div class="hero-metric">
-              <span>Default projected income gap</span>
-              <strong id="heroGap">$5,377/mo</strong>
-              <small>Tax-advantaged path compared with the same dollars in a tax-deferred path.</small>
-              <div class="mini-results">
+          <aside class="hero-card hero-visual" aria-label="Tax Buckets income comparison" aria-live="polite">
+            <div class="hero-image-wrap">
+              <img
+                src="/assets/tax-buckets-crest-hero-v2.webp"
+                alt="Three gold retirement tax buckets representing tax now, tax later, and tax-advantaged income"
+                width="1680"
+                height="945"
+                fetchpriority="high"
+              />
+              <div class="bucket-key" aria-hidden="true">
+                <span>Tax now</span><span>Tax later</span><span>Tax-advantaged</span>
+              </div>
+            </div>
+            <div class="hero-insight">
+              <div class="hero-gap">
+                <span>Potential monthly income difference</span>
+                <strong id="heroGap">$5,377/mo</strong>
+              </div>
+              <div class="hero-comparison">
                 <div><span>Tax later</span><b id="heroDeferred">$4,120/mo</b></div>
                 <div><span>Tax-advantaged</span><b id="heroAdvantaged">$9,496/mo</b></div>
               </div>
             </div>
+            <p class="hero-disclaimer">Illustrative estimate. Adjust the calculator below to model your numbers.</p>
           </aside>
         </div>
       </section>
