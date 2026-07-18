@@ -6,11 +6,11 @@
       (card) => card.querySelector("h3")?.textContent.trim() === "Protection & Legacy",
     );
     const image = protectionCard?.querySelector("img");
-    if (!image || image.dataset.restoredProtectionImage === "true") return;
+    if (!image || image.dataset.restoredProtectionImage === protectionImage) return;
 
     image.src = protectionImage;
     image.alt = "Protection & Legacy";
-    image.dataset.restoredProtectionImage = "true";
+    image.dataset.restoredProtectionImage = protectionImage;
   }
 
   restoreSolutionCardImages();
