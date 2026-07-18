@@ -1,7 +1,7 @@
 (() => {
   const destinations = new Map([
     ["Retirement & Wealth", "https://wattsunified.com/solutions/retirement-wealth"],
-    ["Protection & Legacy", "https://wattsunified.com/solutions/protection-legacy"],
+    ["Protection & Legacy", "https://familychecklist.wattsunified.com/"],
     ["Veteran Guidance", "https://wattsunified.com/veteran-roadmap"],
     ["Life Insurance Strategy", "https://wattsunified.com/solutions/life-insurance"],
     ["Business Solutions", "https://wattsunified.com/solutions/business"],
