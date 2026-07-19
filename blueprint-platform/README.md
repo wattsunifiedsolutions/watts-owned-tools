@@ -14,6 +14,11 @@ Isolated Cloudflare Pages environment for `blueprint.wattsunified.com`.
 
 ```text
 public/
+  retirement-wealth/
+    index.html
+    styles.css
+    script.js
+    assets/
   debt-free/
     index.html
     assets/
