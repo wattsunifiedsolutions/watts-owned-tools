@@ -1,0 +1,64 @@
+/* Homepage-only navigation alignment with the professional light site shell. */
+#root header {
+  position: sticky !important;
+  top: 0 !important;
+  background: rgba(255, 255, 255, 0.97) !important;
+  background-image: none !important;
+  color: #465466 !important;
+  padding-block: 0 !important;
+  border-bottom: 1px solid #e4e1da !important;
+  box-shadow: 0 6px 22px rgba(25, 55, 85, 0.08) !important;
+  pointer-events: auto !important;
+}
+
+#root header > div {
+  width: 100% !important;
+  max-width: none !important;
+  height: 86px !important;
+  padding-inline: clamp(20px, 5vw, 64px) !important;
+}
+
+#root header nav a {
+  color: #465466 !important;
+  font-weight: 500 !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+#root header nav a:hover,
+#root header nav a[aria-current="page"],
+#root header nav a[href="/"] {
+  color: #9b6d0c !important;
+}
+
+#root header a[href="/schedule"] {
+  height: auto !important;
+  padding: 14px 20px !important;
+  border: 1px solid #c18d13 !important;
+  border-radius: 6px !important;
+  background: #c18d13 !important;
+  color: #2f2717 !important;
+  box-shadow: 0 8px 20px rgba(193, 141, 19, 0.2) !important;
+}
+
+#root header a[href="/schedule"]:hover {
+  background: #d5a21e !important;
+  border-color: #d5a21e !important;
+}
+
+#root header button[aria-label="Toggle navigation menu"] {
+  color: #344256 !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+@media (max-width: 767px) {
+  #root header > div {
+    height: 74px !important;
+    padding-inline: 20px !important;
+  }
+
+  #root header img {
+    height: 40px !important;
+  }
+}
