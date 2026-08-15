@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://opportunity.wattsunified.com/sitemap.xml
